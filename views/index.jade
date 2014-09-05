@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  div#Main(data-role="page")
+      div(data-role="header")
+          h1 Main
+      div(data-role="content")
+          a(href="#EssenceCalc" id="EssenceCalcB" data-role="button" onmouseup="") Essence Calculator
+          a(href="#TravelPlanner" id="TravelPlanner" data-role="button" onmouseup="") Travel Planner
+          a(href="#Crafting" id="Craft" data-role="button" onmouseup="") Crafting
+  div#EssenceCalc(data-role="page")
+      div(data-role="header")
+          h1 Essence Calculator
+      div(data-role="content")
+          -var EssenceNames = ["Aleth","Ber","Cynd","Dol","Est","Fel","Gur","Hix","Icur"]
+          table(border="1" width="100%")
+            tr
+                -each essence in EssenceNames
+                  td
+                    center
+                        = essence
+            tr
+                -for(var i=0;i<EssenceNames.length;i++)
+                    td
+                        input.smallinput(type="number" value='0' id='Essence'+(i.toString()))
+            tr(height="50" align=CENTER)
+                -for(var i=0;i<EssenceNames.length-1;i++)
+                    td
+                        input(type="radio" name="essence" value=''+(i)+'' id="EssenceSelection")
+                td
+                    input(type="radio" name="essence" value=''+(EssenceNames.length-1)+'' id="EssenceSelection" checked)
+          a(href="#" id="CalculateEssenceB" data-role="button" onmouseup="calculateEssence()") Calculate
+          div#result
+  div#TravelPlanner(data-role="page")
+      div(data-role="header")
+          h1 Travel Planner
+      div(data-role="content")
+          test
+  div#admin(data-role="page")
+      div(data-role="header")
+          h1 Admin
+      div(data-role="content")
+          Form
+            Search
+            input(type="text" id="realtxt" onkeyup="searchSel('realtxt','realitems')")
+            select#realitems
+                option(value="") Select
+                option(value="1") 1
+                option(value="2") 2
