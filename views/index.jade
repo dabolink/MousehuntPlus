@@ -8,6 +8,7 @@ block content
           a(href="#EssenceCalc" id="EssenceCalcB" data-role="button" onmouseup="") Essence Calculator
           a(href="#TravelPlanner" id="TravelPlanner" data-role="button" onmouseup="") Travel Planner
           a(href="#Crafting" id="Craft" data-role="button" onmouseup="") Crafting
+          a(href="#timers" id="time" data-role="button" onmouseup="") Timers
   div#EssenceCalc(data-role="page")
       div(data-role="header")
           h1 Essence Calculator
@@ -47,3 +48,19 @@ block content
                 option(value="") Select
                 option(value="1") 1
                 option(value="2") 2
+  div#timers(data-role="page")
+      div(data-role="header")
+          h1 Timer
+      div(data-role="context")
+          table(border="1" width ="100%")
+              tr
+                  td#FGPic &nbsp
+                  td &nbsp
+              tr
+                  td#FGStatus &nbsp
+                  td &nbsp
+              tr
+                  td#FGTime &nbsp
+                  td &nbsp
+      div#refresh
+          a(href="#" id="refreshButton" data-role="button" onmouseup="refreshTimers()") Refresh
