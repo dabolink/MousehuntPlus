@@ -1,7 +1,7 @@
 {
-  "name": "Seng 299",
-  "description": "A sample electronic medical booking application for SENG299 @UVic",
-  "repository": "https://github.com/dabolink/Seng299",
+  "name": "MouseHuntPlus",
+  "description": "To Be Implemented",
+  "repository": "https://github.com/dabolink/MousehuntPlus",
   "logo": "",
   "keywords": ["node", "express", "static"]
 }
