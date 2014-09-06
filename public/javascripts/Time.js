@@ -21,10 +21,10 @@ function ForbiddenGrove(){
     diffDate = new Date(curSeconds);
     //alert(diffDate.getHours());
     //alert(curSeconds/(3600000 * 4))
-    if(curSeconds > (3600000 * 16)){
+    if(curSeconds > (3600000 * 4)){
         pic.innerHTML = "<IMG SRC='/images/OpenGrove.png' ALT='Open'>"
         status.innerHTML = "Open"
-        timer.innerHTML = "It will close in:  " + (16 - diffDate.getHours()) + " hours and " + (60 - diffDate.getMinutes()) + " minutes"
+        timer.innerHTML = "It will close in:  " + (20 - diffDate.getHours()) + " hours and " + (60 - diffDate.getMinutes()) + " minutes"
        // alert('Forbidden Grove is open\n' + 'It will close in:  ' + (16 - diffDate.getHours()) + " hours and " + (60 - diffDate.getMinutes()) + ' minutes')
     }
     else{
