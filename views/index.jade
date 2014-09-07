@@ -6,8 +6,8 @@ block content
           h1 Main
       div(data-role="content")
           a(href="#EssenceCalc" id="EssenceCalcB" data-role="button" onmouseup="") Essence Calculator
-          a(href="#TravelPlanner" id="TravelPlanner" data-role="button" onmouseup="") Travel Planner
-          a(href="#Crafting" id="Craft" data-role="button" onmouseup="") Crafting
+          a(href="#" id="TravelPlanner" data-role="button" onmouseup="alert('To Be Implemented')" ) Travel Planner
+          a(href="#" id="Craft" data-role="button" onmouseup="alert('To Be Implemented')") Crafting
           a(href="#timers" id="time" data-role="button" onmouseup="") Timers
   div#EssenceCalc(data-role="page")
       div(data-role="header")
@@ -63,4 +63,4 @@ block content
                   td#FGTime &nbsp
                   td &nbsp
       div#refresh
-          a(href="#" id="refreshButton" data-role="button" onmouseup="refreshTimers()") Refresh
+          a(href="#" id="refreshButton" data-icon="refresh" data-role="button" onmouseup="refreshTimers()") Refresh
