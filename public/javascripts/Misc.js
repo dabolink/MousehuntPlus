@@ -1,7 +1,7 @@
 var updateTime = 60000;
 function initialization(){
-    ForbiddenGrove();
-    setInterval(ForbiddenGrove,updateTime);
+    refreshTimers();
+    setInterval(refreshTimers,updateTime);
 
 }
 
